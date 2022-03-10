@@ -1,8 +1,9 @@
 
-
 class Matrix:
+    data = []
     def __init__(self, matrix):
         self.matrix = matrix
+        self.data = self.matrix
 
 
     def matrix_input(self):
@@ -24,7 +25,8 @@ class Matrix:
             print(*i)
         print('-' * len(matrix[0]))
 
-    def matrix_transpose(self,matrix):
+    def matrix_transpose(self):
+        matrix = self.matrix
         x_size = len(matrix[0])
         y_size = len(matrix)
 
