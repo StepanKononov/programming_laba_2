@@ -5,12 +5,12 @@ size = 5
 
 matrix = [[random.randint(1, 30) for j in range(size)] for i in range(size)]
 
-matrix[0] = [21,21,9,11,20]
-expected_values = []
 
 expected_table = PrettyTable()
-expected_table.title = " Математическое ожиданиe"
-expected_table.field_names = ["Ряд", "Значение"]
+expected_table.title = "Математическое ожиданиe"
+expected_table.field_names = ["Ряд", " Значение "]
+
+expected_values = []
 
 for j in range(size):
     expected_value = 0
@@ -36,4 +36,3 @@ for j in range(size):
 
 print(expected_table)
 print(despersion_table)
-print(matrix[0])
